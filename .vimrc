@@ -32,3 +32,15 @@ autocmd VimEnter * wincmd p
 
 noremap ; :
 noremap : ;
+
+" 自動インデント
+set autoindent
+" タブを空白に変換
+set expandtab
+" タブを空白に変換するときの空白の数
+set softtabstop=2
+" タブが対応する空白の数
+set tabstop=2
+" インデントの各段階に使われる空白の数
+set shiftwidth=2
+
