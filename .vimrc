@@ -44,7 +44,9 @@ set tabstop=2
 " インデントの各段階に使われる空白の数
 set shiftwidth=2
 
-
+"
+" neocomplcache
+"
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_underbar_completion = 1
@@ -60,5 +62,5 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*' 
 
 highlight Pmenu ctermbg=8
-highlight PmenuSel ctermbg=1
+highlight PmenuSel ctermbg=4
 highlight PmenuSbar ctermbg=0
