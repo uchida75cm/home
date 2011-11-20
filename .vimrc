@@ -10,6 +10,7 @@ set number
 syntax on
 set t_Co=256
 colorscheme darkblue
+hi Comment ctermfg=8
 
 "
 " vim-pathogen を呼び出す
