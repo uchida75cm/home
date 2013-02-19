@@ -4,6 +4,9 @@
 set nocompatible
 set number
 
+" ファイルタイプ判別を有効に
+filetype plugin on
+
 "
 " シンタックスハイライト
 "
@@ -45,6 +48,7 @@ set tabstop=2
 " インデントの各段階に使われる空白の数
 set shiftwidth=2
 
+
 "
 " neocomplcache
 "
@@ -65,3 +69,7 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 highlight Pmenu ctermbg=8
 highlight PmenuSel ctermbg=4
 highlight PmenuSbar ctermbg=0
+
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
