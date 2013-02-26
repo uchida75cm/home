@@ -48,9 +48,9 @@ set tabstop=2
 " インデントの各段階に使われる空白の数
 set shiftwidth=2
 
-
 "
 " neocomplcache
+" 補完プラグインの設定
 "
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
@@ -66,10 +66,35 @@ if !exists('g:neocomplcache_keyword_patterns')
 endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*' 
 
+"
+" ポップアップの色を変更
+"
 highlight Pmenu ctermbg=8
 highlight PmenuSel ctermbg=4
 highlight PmenuSbar ctermbg=0
 
+"
+" neosnippet
+" スニペットプラグインの設定
+"
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
+
+"
+" 環境別のvimrcを読み込む
+"
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
