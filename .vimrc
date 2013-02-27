@@ -92,6 +92,12 @@ endif
 
 let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
 
+" 
+" Align(整形プラグイン)の設定
+"
+let g:Align_xstrlen = 3       " for javanese string
+let g:DrChipTopLvlMenu = ''   " remove 'DrChip' menu
+
 "
 " 環境別のvimrcを読み込む
 "
