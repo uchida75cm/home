@@ -4,6 +4,7 @@
 set nocompatible
 set number
 set hlsearch
+set incsearch
 
 " ファイルタイプ判別を有効に
 filetype plugin on
