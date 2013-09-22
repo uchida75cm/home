@@ -3,6 +3,7 @@
 "
 set nocompatible
 set number
+set hlsearch
 
 " ファイルタイプ判別を有効に
 filetype plugin on
