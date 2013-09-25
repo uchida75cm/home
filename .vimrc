@@ -90,7 +90,7 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
-let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets,~/.vim/snippets'
 
 " 
 " Align(整形プラグイン)の設定
