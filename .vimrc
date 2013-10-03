@@ -33,7 +33,7 @@ augroup END
 
 set cursorline
 
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
 noremap ; :
