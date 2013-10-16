@@ -1,3 +1,6 @@
+autocmd!
+scriptencoding utf-8
+
 "
 " 行番号を表示
 "
@@ -5,6 +8,7 @@ set nocompatible
 set number
 set hlsearch
 set incsearch
+set virtualedit=block
 
 " ファイルタイプ判別を有効に
 filetype plugin on
