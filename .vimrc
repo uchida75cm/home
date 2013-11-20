@@ -9,6 +9,7 @@ set number
 set hlsearch
 set incsearch
 set virtualedit=block
+set backspace=indent,eol,start
 
 " ファイルタイプ判別を有効に
 filetype plugin on
